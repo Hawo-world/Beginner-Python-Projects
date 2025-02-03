@@ -1,0 +1,6 @@
+with open("story.txt", "r") as f:
+    story = f.read()
+
+word = []
+
+for i, char in  enumerate(story):
