@@ -1,1 +1,45 @@
+name = input("Type your name: ")
+print("Welcome", name, "to this adventure! For every decision that you make, it earns you 1 point.")
+print("You are given 5 hearts, your goal is to make it to the end of the game without loosing them all. Good-Luck! :) ")
+hearts = 5
+points = 0
 
+answer = input(
+    "You are on a path that splits 3 ways. Type 1 to go left that leads to a river, type 2 to take the path that leads to the jungle, or type 3 to take the right path that leads to a cave. Which way would you like to go? ").lower()
+
+if answer == "left":
+    answer = input("You've arrived at the river. Type 'swim' to swim across, 'walk' to walk around it, or 'swing' to swing across using a vine: ")
+    points += 1
+
+    if answer == "swim":
+        points += 1
+        print("You've chosen to swim across.")
+        print("...the current is strong. Quick, type 'f' to fight the current and continue across, or 'r' to ride the river current down: ").lower()
+
+        if answer == "f":
+            points += 1
+            print("You chose to fight the current and continue swimming...")
+            print("You were too busy focusing on getting across, you didnt notice there was a crocodile waiting on the other side. ")
+            hearts -= 5
+            print("It ate you...and now have ", hearts, " hearts left...You loose!")
+            print(" you scored", points, "points this round. Would you like a hint? Type yes or no: ").lower()
+            if answer == "yes":
+                print("Take it easy on yourself, dont fixate on progress too hard that causes you loose sight of your goal. Its ok to follow the flow sometimes and enjoy the journey. ")
+                    
+        if answer == "r":
+            print("You chose to ride the current down..you've made it to a pond at the end of the river.")
+            hearts -= 1
+            print("However, you loose 1 heart for injuries by the rocks and now have", hearts, "hearts left.")
+
+    elif answer == "walk":
+        print("You've chosen to walk around the river..Which way would you like to go? ")
+        points += 1
+        print("Type 'L' to go left or 'R' to go right: ").upper()
+        if answer == "L":
+            points += 1
+            Print("You chose to go left..this path was the longest and most straining, thus you loose 1 heart due to exhaustion.")
+            print("You've reached a pond at the end of the river. However, you notice its getting late..What would you like to do? ")
+            print("Type 'S' to seek shelter and rest, or type 'L' to leave the pond and seek shelter & rest somewhere else:  ").lower()
+elif answer == "straight ahead":
+    print("this project is unfinushed")
+# this project is unfinished 
