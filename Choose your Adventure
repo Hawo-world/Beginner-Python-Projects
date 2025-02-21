@@ -1,6 +1,0 @@
-name = input("Type your name: ")
-print("Welcome", name, "to this adventure! You are given 5 hearts, for each decision that you make, you earn 1 point.")
-hearts = 5
-points = 0
-print("Your goal in this game is to see how far you can get without loosing all 5 of your hearts! also, keep an open mind to hidden messages thethere may be ;) ")
-
