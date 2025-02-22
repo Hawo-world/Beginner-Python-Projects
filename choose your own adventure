@@ -1,3 +1,5 @@
+# this is a code that uses the 'if', 'elif', & 'else' advanced strucure. I created this file while following along a tutorial by 'Tech with Tim'.
+
 name = input("Type your name: ")
 print("Welcome", name, "to this adventure!")
 print("You are on a dirt road, it has come to an end and you can go left or right.")
